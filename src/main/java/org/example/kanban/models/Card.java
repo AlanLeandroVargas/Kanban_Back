@@ -12,7 +12,8 @@ public class Card {
     private Integer id;
     private String name;
     private String description;
-    private List<String> tags;
     @ManyToOne
     private KanbanList kanbanList;
+    @ManyToMany(mappedBy = "cards")
+    private List<Tag> tags;
 }
