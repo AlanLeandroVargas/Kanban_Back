@@ -11,4 +11,10 @@ public class KanbanList {
     private String name;
     @ManyToOne
     private Board board;
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
 }

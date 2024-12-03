@@ -22,4 +22,22 @@ public class User {
     private Comment comment;
     @ManyToOne
     private Board board;
+    public String getName(){
+        return name;
+    }
+    public void setName(){
+        this.name = name;
+    }
+    public String getLastName(){
+        return lastName;
+    }
+    public void setLastName(){
+        this.lastName = lastName;
+    }
+    public String getEmail(){
+        return email;
+    }
+    public void setEmail(String email){
+        this.email = email;
+    }
 }

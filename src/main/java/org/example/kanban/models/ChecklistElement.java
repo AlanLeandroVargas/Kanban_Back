@@ -15,4 +15,22 @@ public class ChecklistElement {
     private Date dueDate;
     @ManyToOne
     private Checklist checklist;
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public Boolean getIsCompleted(){
+        return isCompleted;
+    }
+    public void setIsCompleted(Boolean isCompleted){
+        this.isCompleted = isCompleted;
+    }
+    public Date getDueDate(){
+        return dueDate;
+    }
+    public void setDueDate(Date dueDate){
+        this.dueDate = dueDate;
+    }
 }

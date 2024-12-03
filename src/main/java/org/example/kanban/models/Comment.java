@@ -14,4 +14,16 @@ public class Comment {
     private Date date;
     @ManyToOne
     private Card card;
+    public String getComment(){
+        return comment;
+    }
+    public void setComment(String comment){
+        this.comment = comment;
+    }
+    public Date getDate(){
+        return date;
+    }
+    public void setDate(Date date){
+        this.date = date;
+    }
 }
